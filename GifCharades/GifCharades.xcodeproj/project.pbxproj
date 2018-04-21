@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C799F66208BE81F0054BB7C /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C799F65208BE81F0054BB7C /* Phrase.swift */; };
+		6C799F6D208BE9C50054BB7C /* PhraseBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C799F6C208BE9C50054BB7C /* PhraseBank.swift */; };
 		6C8142C9208ACC4300F39406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142C8208ACC4300F39406 /* AppDelegate.swift */; };
 		6C8142CE208ACC4300F39406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8142CC208ACC4300F39406 /* Main.storyboard */; };
 		6C8142D0208ACC4300F39406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8142CF208ACC4300F39406 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		46388B1D907CFA85E05EA93B /* Pods-GifCharades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCharades.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCharades/Pods-GifCharades.release.xcconfig"; sourceTree = "<group>"; };
+		6C799F65208BE81F0054BB7C /* Phrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
+		6C799F6C208BE9C50054BB7C /* PhraseBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseBank.swift; sourceTree = "<group>"; };
 		6C8142C5208ACC4300F39406 /* GifCharades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifCharades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8142C8208ACC4300F39406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8142CD208ACC4300F39406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,51 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6C799F67208BE9080054BB7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C799F65208BE81F0054BB7C /* Phrase.swift */,
+				6C799F6C208BE9C50054BB7C /* PhraseBank.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C799F68208BE9180054BB7C /* GifClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6C8142DA208AD49D00F39406 /* Giphy.swift */,
+				6C8142DE208AD79000F39406 /* Gif.swift */,
+			);
+			path = GifClasses;
+			sourceTree = "<group>";
+		};
+		6C799F69208BE9490054BB7C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				6C8142C8208ACC4300F39406 /* AppDelegate.swift */,
+				6C8142D4208ACC4300F39406 /* Info.plist */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		6C799F6A208BE9600054BB7C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6C8142CC208ACC4300F39406 /* Main.storyboard */,
+				6C8142CF208ACC4300F39406 /* Assets.xcassets */,
+				6C8142D1208ACC4300F39406 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6C799F6B208BE9730054BB7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C8142DC208AD56300F39406 /* GifController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6C8142BC208ACC4300F39406 = {
 			isa = PBXGroup;
 			children = (
@@ -74,14 +123,11 @@
 		6C8142C7208ACC4300F39406 /* GifCharades */ = {
 			isa = PBXGroup;
 			children = (
-				6C8142C8208ACC4300F39406 /* AppDelegate.swift */,
-				6C8142DC208AD56300F39406 /* GifController.swift */,
-				6C8142CC208ACC4300F39406 /* Main.storyboard */,
-				6C8142CF208ACC4300F39406 /* Assets.xcassets */,
-				6C8142D1208ACC4300F39406 /* LaunchScreen.storyboard */,
-				6C8142D4208ACC4300F39406 /* Info.plist */,
-				6C8142DA208AD49D00F39406 /* Giphy.swift */,
-				6C8142DE208AD79000F39406 /* Gif.swift */,
+				6C799F6B208BE9730054BB7C /* Controller */,
+				6C799F6A208BE9600054BB7C /* UI */,
+				6C799F69208BE9490054BB7C /* Infrastructure */,
+				6C799F68208BE9180054BB7C /* GifClasses */,
+				6C799F67208BE9080054BB7C /* Model */,
 			);
 			path = GifCharades;
 			sourceTree = "<group>";
@@ -208,8 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C8142DD208AD56300F39406 /* GifController.swift in Sources */,
+				6C799F66208BE81F0054BB7C /* Phrase.swift in Sources */,
 				6C8142DB208AD49D00F39406 /* Giphy.swift in Sources */,
 				6C8142DF208AD79000F39406 /* Gif.swift in Sources */,
+				6C799F6D208BE9C50054BB7C /* PhraseBank.swift in Sources */,
 				6C8142C9208ACC4300F39406 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
