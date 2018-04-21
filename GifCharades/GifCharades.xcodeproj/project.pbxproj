@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6C8142C9208ACC4300F39406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142C8208ACC4300F39406 /* AppDelegate.swift */; };
-		6C8142CB208ACC4300F39406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142CA208ACC4300F39406 /* ViewController.swift */; };
 		6C8142CE208ACC4300F39406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8142CC208ACC4300F39406 /* Main.storyboard */; };
 		6C8142D0208ACC4300F39406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8142CF208ACC4300F39406 /* Assets.xcassets */; };
 		6C8142D3208ACC4300F39406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8142D1208ACC4300F39406 /* LaunchScreen.storyboard */; };
+		6C8142DB208AD49D00F39406 /* Giphy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142DA208AD49D00F39406 /* Giphy.swift */; };
+		6C8142DD208AD56300F39406 /* GifController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142DC208AD56300F39406 /* GifController.swift */; };
+		6C8142DF208AD79000F39406 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142DE208AD79000F39406 /* Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C8142C5208ACC4300F39406 /* GifCharades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifCharades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8142C8208ACC4300F39406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C8142CA208ACC4300F39406 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C8142CD208ACC4300F39406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C8142CF208ACC4300F39406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C8142D2208ACC4300F39406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C8142D4208ACC4300F39406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C8142DA208AD49D00F39406 /* Giphy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giphy.swift; sourceTree = "<group>"; };
+		6C8142DC208AD56300F39406 /* GifController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifController.swift; sourceTree = "<group>"; };
+		6C8142DE208AD79000F39406 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				6C8142C8208ACC4300F39406 /* AppDelegate.swift */,
-				6C8142CA208ACC4300F39406 /* ViewController.swift */,
+				6C8142DC208AD56300F39406 /* GifController.swift */,
 				6C8142CC208ACC4300F39406 /* Main.storyboard */,
 				6C8142CF208ACC4300F39406 /* Assets.xcassets */,
 				6C8142D1208ACC4300F39406 /* LaunchScreen.storyboard */,
 				6C8142D4208ACC4300F39406 /* Info.plist */,
+				6C8142DA208AD49D00F39406 /* Giphy.swift */,
+				6C8142DE208AD79000F39406 /* Gif.swift */,
 			);
 			path = GifCharades;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C8142CB208ACC4300F39406 /* ViewController.swift in Sources */,
+				6C8142DD208AD56300F39406 /* GifController.swift in Sources */,
+				6C8142DB208AD49D00F39406 /* Giphy.swift in Sources */,
+				6C8142DF208AD79000F39406 /* Gif.swift in Sources */,
 				6C8142C9208ACC4300F39406 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
