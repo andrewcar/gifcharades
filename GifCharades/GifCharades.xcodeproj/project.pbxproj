@@ -14,9 +14,11 @@
 		6C8142DB208AD49D00F39406 /* Giphy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142DA208AD49D00F39406 /* Giphy.swift */; };
 		6C8142DD208AD56300F39406 /* GifController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142DC208AD56300F39406 /* GifController.swift */; };
 		6C8142DF208AD79000F39406 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8142DE208AD79000F39406 /* Gif.swift */; };
+		F3B206067DFD1381883E91BB /* Pods_GifCharades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE2B896AC32101FC4B027EA /* Pods_GifCharades.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46388B1D907CFA85E05EA93B /* Pods-GifCharades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCharades.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCharades/Pods-GifCharades.release.xcconfig"; sourceTree = "<group>"; };
 		6C8142C5208ACC4300F39406 /* GifCharades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifCharades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8142C8208ACC4300F39406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8142CD208ACC4300F39406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6C8142DA208AD49D00F39406 /* Giphy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giphy.swift; sourceTree = "<group>"; };
 		6C8142DC208AD56300F39406 /* GifController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifController.swift; sourceTree = "<group>"; };
 		6C8142DE208AD79000F39406 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		DDE34B5E8C34C963BD7BC5C7 /* Pods-GifCharades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCharades.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifCharades/Pods-GifCharades.debug.xcconfig"; sourceTree = "<group>"; };
+		ECE2B896AC32101FC4B027EA /* Pods_GifCharades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifCharades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B206067DFD1381883E91BB /* Pods_GifCharades.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38E0334FB863A644AF7F87A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDE34B5E8C34C963BD7BC5C7 /* Pods-GifCharades.debug.xcconfig */,
+				46388B1D907CFA85E05EA93B /* Pods-GifCharades.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6C8142BC208ACC4300F39406 = {
 			isa = PBXGroup;
 			children = (
 				6C8142C7208ACC4300F39406 /* GifCharades */,
 				6C8142C6208ACC4300F39406 /* Products */,
+				38E0334FB863A644AF7F87A4 /* Pods */,
+				ED4740F93ACEAEDAF76AAD98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,14 @@
 			path = GifCharades;
 			sourceTree = "<group>";
 		};
+		ED4740F93ACEAEDAF76AAD98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECE2B896AC32101FC4B027EA /* Pods_GifCharades.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C8142D7208ACC4300F39406 /* Build configuration list for PBXNativeTarget "GifCharades" */;
 			buildPhases = (
+				3EDB85676DBB1C2EE951B927 /* [CP] Check Pods Manifest.lock */,
 				6C8142C1208ACC4300F39406 /* Sources */,
 				6C8142C2208ACC4300F39406 /* Frameworks */,
 				6C8142C3208ACC4300F39406 /* Resources */,
+				2A1221FD267D53773D07826B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A1221FD267D53773D07826B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GifCharades/Pods-GifCharades-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifCharades/Pods-GifCharades-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EDB85676DBB1C2EE951B927 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifCharades-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C8142C1208ACC4300F39406 /* Sources */ = {
@@ -280,6 +345,7 @@
 		};
 		6C8142D8208ACC4300F39406 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDE34B5E8C34C963BD7BC5C7 /* Pods-GifCharades.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +360,7 @@
 		};
 		6C8142D9208ACC4300F39406 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46388B1D907CFA85E05EA93B /* Pods-GifCharades.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

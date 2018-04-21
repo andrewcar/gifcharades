@@ -7,23 +7,22 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class GifController: UIViewController {
 
     @IBOutlet weak var gifImageView: UIImageView!
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+
+    @IBAction func fetchGif(_ sender: Any) {
         let g = Giphy(apiKey: Giphy.PublicBetaAPIKey)
         
         g.random("dogs", rating: nil) { gif, err in
             
-            DispatchQueue.main.async {
-                self.gifImageView.image = UIImage.gif(url: (gif?.giphyURL.absoluteString)!)
-            }
+            if err != nil { return }
+            
+            self.gifImageView.sd_setImage(with: gif?.giphyURL, completed: nil)
             
         }
-
     }
 }
